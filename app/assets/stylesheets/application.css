@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require bootstrap_and_overrides
+ *= require_self
+ */
+
+html.background { 
+  background: url(/assets/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.container-fluid {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+div.navbar-inner {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;	
+}
+div.featurette {
+  margin-bottom: 50px;
+}
+div.marketing {
+  text-align: center;
+}
+div.boxed .span4 {
+  background: #dddddd;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+.btn-social {
+  margin-top: 5px;
+}
+.devise .alert {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+div.row {
+  margin-left:0;
+}
+
+div#console {
+	margin-top: 20px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+div#console p {
+	color: #aaa;
+	font-family: Courier, serif;
+	line-height: 8px;
+	font-size: 65%;
+}
