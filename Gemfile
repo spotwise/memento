@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.1.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
@@ -47,7 +48,11 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem "therubyracer"
+group :production do
+  gem 'libv8', '~> 3.16.14.7'
+  gem 'therubyracer', '~> 0.12.1'
+end
+
 gem "less-rails"
 gem "twitter-bootstrap-rails"
 
