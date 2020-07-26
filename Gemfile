@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
-ruby '2.1.7'
+ruby '2.6.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.0'
+gem 'rails', '4.2.11.3'
 
 # Use Sqlite3 for development and testing
 group :development, :test do
-  gem 'sqlite3'
+  gem 'sqlite3', '~> 1.3.6'
 end
 # Use PostgreSQL (for Heroku)
 group :production, :staging do
@@ -54,7 +54,7 @@ group :production do
 end
 
 gem "less-rails"
-gem "twitter-bootstrap-rails"
+gem "twitter-bootstrap-rails", '~> 2.2.8'
 
 # Just using "gem 'rack-offline'" doesn't work in Rails 4
 gem "rack-offline", :git => "git://github.com/wycats/rack-offline.git"

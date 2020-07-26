@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20140817221058) do
 
-  create_table "items", force: true do |t|
+  create_table "items", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
